@@ -1,0 +1,2410 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Crimes_-_2001_to_Present_20231030' inline='true' name='federated.0bjyeyu0cxb0oe14kvq9z00kfa1v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Crimes_-_2001_to_Present_20231030' name='textscan.1ccnndb15yrkr314pbg910n5dgnh'>
+            <connection class='textscan' directory='C:/Users/oscar/Downloads' filename='Crimes_-_2001_to_Present_20231030.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ccnndb15yrkr314pbg910n5dgnh' name='Crimes_-_2001_to_Present_20231030.csv' table='[Crimes_-_2001_to_Present_20231030#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='Case Number' ordinal='1' />
+            <column datatype='string' name='Date' ordinal='2' />
+            <column datatype='string' name='Block' ordinal='3' />
+            <column datatype='string' name='IUCR' ordinal='4' />
+            <column datatype='string' name='Primary Type' ordinal='5' />
+            <column datatype='string' name='Description' ordinal='6' />
+            <column datatype='string' name='Location Description' ordinal='7' />
+            <column datatype='boolean' name='Arrest' ordinal='8' />
+            <column datatype='boolean' name='Domestic' ordinal='9' />
+            <column datatype='integer' name='Beat' ordinal='10' />
+            <column datatype='integer' name='District' ordinal='11' />
+            <column datatype='integer' name='Ward' ordinal='12' />
+            <column datatype='integer' name='Community Area' ordinal='13' />
+            <column datatype='string' name='FBI Code' ordinal='14' />
+            <column datatype='integer' name='X Coordinate' ordinal='15' />
+            <column datatype='integer' name='Y Coordinate' ordinal='16' />
+            <column datatype='integer' name='Year' ordinal='17' />
+            <column datatype='string' name='Updated On' ordinal='18' />
+            <column datatype='real' name='Latitude' ordinal='19' />
+            <column datatype='real' name='Longitude' ordinal='20' />
+            <column datatype='string' name='Location' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ccnndb15yrkr314pbg910n5dgnh' name='Crimes_-_2001_to_Present_20231030.csv' table='[Crimes_-_2001_to_Present_20231030#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='Case Number' ordinal='1' />
+            <column datatype='string' name='Date' ordinal='2' />
+            <column datatype='string' name='Block' ordinal='3' />
+            <column datatype='string' name='IUCR' ordinal='4' />
+            <column datatype='string' name='Primary Type' ordinal='5' />
+            <column datatype='string' name='Description' ordinal='6' />
+            <column datatype='string' name='Location Description' ordinal='7' />
+            <column datatype='boolean' name='Arrest' ordinal='8' />
+            <column datatype='boolean' name='Domestic' ordinal='9' />
+            <column datatype='integer' name='Beat' ordinal='10' />
+            <column datatype='integer' name='District' ordinal='11' />
+            <column datatype='integer' name='Ward' ordinal='12' />
+            <column datatype='integer' name='Community Area' ordinal='13' />
+            <column datatype='string' name='FBI Code' ordinal='14' />
+            <column datatype='integer' name='X Coordinate' ordinal='15' />
+            <column datatype='integer' name='Y Coordinate' ordinal='16' />
+            <column datatype='integer' name='Year' ordinal='17' />
+            <column datatype='string' name='Updated On' ordinal='18' />
+            <column datatype='real' name='Latitude' ordinal='19' />
+            <column datatype='real' name='Longitude' ordinal='20' />
+            <column datatype='string' name='Location' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Case Number]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Case Number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Block</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Block]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Block</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IUCR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IUCR]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>IUCR</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary Type]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Primary Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location Description]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Location Description</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrest</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Arrest]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Arrest</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Domestic</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Domestic]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Domestic</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Beat]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Beat</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[District]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>District</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ward</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ward]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Ward</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Community Area</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Community Area]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Community Area</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FBI Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FBI Code]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>FBI Code</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X Coordinate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[X Coordinate]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>X Coordinate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y Coordinate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Y Coordinate]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Y Coordinate</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Updated On</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Updated On]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Updated On</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Iucr' datatype='string' name='[IUCR]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Crimes_-_2001_to_Present_20231030.csv' datatype='table' name='[__tableau_internal_object_id__].[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/oscar/OneDrive/Documentos/Mi Repositorio de Tableau/Fuentes de datos/Crimes_-_2001_to_Present_20231030.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/31/2023 03:29:02 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Crimes_-_2001_to_Present_20231030' increment-value='%null%' refresh-type='create' rows-inserted='7923332' timestamp-start='2023-10-31 03:26:26.786' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7923332</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case Number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Case Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case Number</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7923332</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2800497</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Block</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Block]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Block</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>139345</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IUCR</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IUCR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IUCR</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>602</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Primary Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Primary Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Primary Type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>740</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location Description</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>212</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arrest</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Arrest]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arrest</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Domestic</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Domestic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Domestic</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Beat</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Beat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Beat</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>302</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>District</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[District]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>District</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ward</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ward]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ward</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Community Area</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Community Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Community Area</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FBI Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FBI Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FBI Code</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>X Coordinate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[X Coordinate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>X Coordinate</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>247697</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Y Coordinate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Y Coordinate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Y Coordinate</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>388617</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Updated On</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Updated On]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Updated On</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10147</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>925115</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>925638</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>925713</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Crimes_-_2001_to_Present_20231030.csv' id='Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3'>
+            <properties context=''>
+              <relation connection='textscan.1ccnndb15yrkr314pbg910n5dgnh' name='Crimes_-_2001_to_Present_20231030.csv' table='[Crimes_-_2001_to_Present_20231030#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='Case Number' ordinal='1' />
+                  <column datatype='string' name='Date' ordinal='2' />
+                  <column datatype='string' name='Block' ordinal='3' />
+                  <column datatype='string' name='IUCR' ordinal='4' />
+                  <column datatype='string' name='Primary Type' ordinal='5' />
+                  <column datatype='string' name='Description' ordinal='6' />
+                  <column datatype='string' name='Location Description' ordinal='7' />
+                  <column datatype='boolean' name='Arrest' ordinal='8' />
+                  <column datatype='boolean' name='Domestic' ordinal='9' />
+                  <column datatype='integer' name='Beat' ordinal='10' />
+                  <column datatype='integer' name='District' ordinal='11' />
+                  <column datatype='integer' name='Ward' ordinal='12' />
+                  <column datatype='integer' name='Community Area' ordinal='13' />
+                  <column datatype='string' name='FBI Code' ordinal='14' />
+                  <column datatype='integer' name='X Coordinate' ordinal='15' />
+                  <column datatype='integer' name='Y Coordinate' ordinal='16' />
+                  <column datatype='integer' name='Year' ordinal='17' />
+                  <column datatype='string' name='Updated On' ordinal='18' />
+                  <column datatype='real' name='Latitude' ordinal='19' />
+                  <column datatype='real' name='Longitude' ordinal='20' />
+                  <column datatype='string' name='Location' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Crimes_-_2001_to_Present_20231030 (copia)' inline='true' name='federated.0bjyeyu0cxb0oe14kvq9z00kfa1v (copia)' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Crimes_-_2001_to_Present_20231030' name='textscan.1ccnndb15yrkr314pbg910n5dgnh (copia)'>
+            <connection class='textscan' directory='C:/Users/oscar/Downloads' filename='Crimes_-_2001_to_Present_20231030.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ccnndb15yrkr314pbg910n5dgnh (copia)' name='Crimes_-_2001_to_Present_20231030.csv' table='[Crimes_-_2001_to_Present_20231030#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='Case Number' ordinal='1' />
+            <column datatype='string' name='Date' ordinal='2' />
+            <column datatype='string' name='Block' ordinal='3' />
+            <column datatype='string' name='IUCR' ordinal='4' />
+            <column datatype='string' name='Primary Type' ordinal='5' />
+            <column datatype='string' name='Description' ordinal='6' />
+            <column datatype='string' name='Location Description' ordinal='7' />
+            <column datatype='boolean' name='Arrest' ordinal='8' />
+            <column datatype='boolean' name='Domestic' ordinal='9' />
+            <column datatype='integer' name='Beat' ordinal='10' />
+            <column datatype='integer' name='District' ordinal='11' />
+            <column datatype='integer' name='Ward' ordinal='12' />
+            <column datatype='integer' name='Community Area' ordinal='13' />
+            <column datatype='string' name='FBI Code' ordinal='14' />
+            <column datatype='integer' name='X Coordinate' ordinal='15' />
+            <column datatype='integer' name='Y Coordinate' ordinal='16' />
+            <column datatype='integer' name='Year' ordinal='17' />
+            <column datatype='string' name='Updated On' ordinal='18' />
+            <column datatype='real' name='Latitude' ordinal='19' />
+            <column datatype='real' name='Longitude' ordinal='20' />
+            <column datatype='string' name='Location' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ccnndb15yrkr314pbg910n5dgnh (copia)' name='Crimes_-_2001_to_Present_20231030.csv' table='[Crimes_-_2001_to_Present_20231030#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='Case Number' ordinal='1' />
+            <column datatype='string' name='Date' ordinal='2' />
+            <column datatype='string' name='Block' ordinal='3' />
+            <column datatype='string' name='IUCR' ordinal='4' />
+            <column datatype='string' name='Primary Type' ordinal='5' />
+            <column datatype='string' name='Description' ordinal='6' />
+            <column datatype='string' name='Location Description' ordinal='7' />
+            <column datatype='boolean' name='Arrest' ordinal='8' />
+            <column datatype='boolean' name='Domestic' ordinal='9' />
+            <column datatype='integer' name='Beat' ordinal='10' />
+            <column datatype='integer' name='District' ordinal='11' />
+            <column datatype='integer' name='Ward' ordinal='12' />
+            <column datatype='integer' name='Community Area' ordinal='13' />
+            <column datatype='string' name='FBI Code' ordinal='14' />
+            <column datatype='integer' name='X Coordinate' ordinal='15' />
+            <column datatype='integer' name='Y Coordinate' ordinal='16' />
+            <column datatype='integer' name='Year' ordinal='17' />
+            <column datatype='string' name='Updated On' ordinal='18' />
+            <column datatype='real' name='Latitude' ordinal='19' />
+            <column datatype='real' name='Longitude' ordinal='20' />
+            <column datatype='string' name='Location' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Case Number]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Case Number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Block</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Block]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Block</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IUCR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IUCR]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>IUCR</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary Type]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Primary Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location Description]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Location Description</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrest</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Arrest]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Arrest</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Domestic</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Domestic]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Domestic</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Beat]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Beat</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[District]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>District</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ward</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ward]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Ward</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Community Area</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Community Area]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Community Area</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FBI Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FBI Code]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>FBI Code</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X Coordinate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[X Coordinate]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>X Coordinate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y Coordinate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Y Coordinate]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Y Coordinate</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Updated On</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Updated On]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Updated On</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Iucr' datatype='string' name='[IUCR]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Crimes_-_2001_to_Present_20231030.csv' datatype='table' name='[__tableau_internal_object_id__].[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/oscar/OneDrive/Documentos/Mi Repositorio de Tableau/Fuentes de datos/Crimes_-_2001_to_Present_20231030 copy 1.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/31/2023 03:29:02 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Crimes_-_2001_to_Present_20231030' increment-value='%null%' refresh-type='create' rows-inserted='7923332' timestamp-start='2023-10-31 03:26:26.786' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7923332</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case Number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Case Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case Number</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7923332</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2800497</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Block</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Block]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Block</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>139345</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IUCR</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IUCR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IUCR</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>602</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Primary Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Primary Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Primary Type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>740</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location Description</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>212</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arrest</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Arrest]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arrest</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Domestic</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Domestic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Domestic</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Beat</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Beat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Beat</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>302</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>District</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[District]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>District</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ward</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ward]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ward</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Community Area</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Community Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Community Area</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FBI Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FBI Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FBI Code</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>X Coordinate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[X Coordinate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>X Coordinate</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>247697</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Y Coordinate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Y Coordinate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Y Coordinate</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>388617</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Updated On</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Updated On]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Updated On</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10147</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>925115</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>925638</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>925713</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Crimes_-_2001_to_Present_20231030.csv' id='Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3'>
+            <properties context=''>
+              <relation connection='textscan.1ccnndb15yrkr314pbg910n5dgnh (copia)' name='Crimes_-_2001_to_Present_20231030.csv' table='[Crimes_-_2001_to_Present_20231030#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='Case Number' ordinal='1' />
+                  <column datatype='string' name='Date' ordinal='2' />
+                  <column datatype='string' name='Block' ordinal='3' />
+                  <column datatype='string' name='IUCR' ordinal='4' />
+                  <column datatype='string' name='Primary Type' ordinal='5' />
+                  <column datatype='string' name='Description' ordinal='6' />
+                  <column datatype='string' name='Location Description' ordinal='7' />
+                  <column datatype='boolean' name='Arrest' ordinal='8' />
+                  <column datatype='boolean' name='Domestic' ordinal='9' />
+                  <column datatype='integer' name='Beat' ordinal='10' />
+                  <column datatype='integer' name='District' ordinal='11' />
+                  <column datatype='integer' name='Ward' ordinal='12' />
+                  <column datatype='integer' name='Community Area' ordinal='13' />
+                  <column datatype='string' name='FBI Code' ordinal='14' />
+                  <column datatype='integer' name='X Coordinate' ordinal='15' />
+                  <column datatype='integer' name='Y Coordinate' ordinal='16' />
+                  <column datatype='integer' name='Year' ordinal='17' />
+                  <column datatype='string' name='Updated On' ordinal='18' />
+                  <column datatype='real' name='Latitude' ordinal='19' />
+                  <column datatype='real' name='Longitude' ordinal='20' />
+                  <column datatype='string' name='Location' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Crimes_-_2001_to_Present_20231030 (copia) (copia)' inline='true' name='federated.0bjyeyu0cxb0oe14kvq9z00kfa1v (copia) (copia)' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Crimes_-_2001_to_Present_20231030' name='textscan.1ccnndb15yrkr314pbg910n5dgnh (copia) (copia)'>
+            <connection class='textscan' directory='C:/Users/oscar/Downloads' filename='Crimes_-_2001_to_Present_20231030.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ccnndb15yrkr314pbg910n5dgnh (copia) (copia)' name='Crimes_-_2001_to_Present_20231030.csv' table='[Crimes_-_2001_to_Present_20231030#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='Case Number' ordinal='1' />
+            <column datatype='string' name='Date' ordinal='2' />
+            <column datatype='string' name='Block' ordinal='3' />
+            <column datatype='string' name='IUCR' ordinal='4' />
+            <column datatype='string' name='Primary Type' ordinal='5' />
+            <column datatype='string' name='Description' ordinal='6' />
+            <column datatype='string' name='Location Description' ordinal='7' />
+            <column datatype='boolean' name='Arrest' ordinal='8' />
+            <column datatype='boolean' name='Domestic' ordinal='9' />
+            <column datatype='integer' name='Beat' ordinal='10' />
+            <column datatype='integer' name='District' ordinal='11' />
+            <column datatype='integer' name='Ward' ordinal='12' />
+            <column datatype='integer' name='Community Area' ordinal='13' />
+            <column datatype='string' name='FBI Code' ordinal='14' />
+            <column datatype='integer' name='X Coordinate' ordinal='15' />
+            <column datatype='integer' name='Y Coordinate' ordinal='16' />
+            <column datatype='integer' name='Year' ordinal='17' />
+            <column datatype='string' name='Updated On' ordinal='18' />
+            <column datatype='real' name='Latitude' ordinal='19' />
+            <column datatype='real' name='Longitude' ordinal='20' />
+            <column datatype='string' name='Location' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ccnndb15yrkr314pbg910n5dgnh (copia) (copia)' name='Crimes_-_2001_to_Present_20231030.csv' table='[Crimes_-_2001_to_Present_20231030#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='Case Number' ordinal='1' />
+            <column datatype='string' name='Date' ordinal='2' />
+            <column datatype='string' name='Block' ordinal='3' />
+            <column datatype='string' name='IUCR' ordinal='4' />
+            <column datatype='string' name='Primary Type' ordinal='5' />
+            <column datatype='string' name='Description' ordinal='6' />
+            <column datatype='string' name='Location Description' ordinal='7' />
+            <column datatype='boolean' name='Arrest' ordinal='8' />
+            <column datatype='boolean' name='Domestic' ordinal='9' />
+            <column datatype='integer' name='Beat' ordinal='10' />
+            <column datatype='integer' name='District' ordinal='11' />
+            <column datatype='integer' name='Ward' ordinal='12' />
+            <column datatype='integer' name='Community Area' ordinal='13' />
+            <column datatype='string' name='FBI Code' ordinal='14' />
+            <column datatype='integer' name='X Coordinate' ordinal='15' />
+            <column datatype='integer' name='Y Coordinate' ordinal='16' />
+            <column datatype='integer' name='Year' ordinal='17' />
+            <column datatype='string' name='Updated On' ordinal='18' />
+            <column datatype='real' name='Latitude' ordinal='19' />
+            <column datatype='real' name='Longitude' ordinal='20' />
+            <column datatype='string' name='Location' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Case Number]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Case Number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Block</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Block]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Block</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IUCR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IUCR]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>IUCR</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary Type]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Primary Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location Description]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Location Description</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrest</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Arrest]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Arrest</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Domestic</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Domestic]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Domestic</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Beat]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Beat</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[District]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>District</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ward</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ward]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Ward</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Community Area</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Community Area]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Community Area</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FBI Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FBI Code]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>FBI Code</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X Coordinate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[X Coordinate]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>X Coordinate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y Coordinate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Y Coordinate]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Y Coordinate</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Updated On</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Updated On]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Updated On</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Crimes_-_2001_to_Present_20231030.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Iucr' datatype='string' name='[IUCR]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Crimes_-_2001_to_Present_20231030.csv' datatype='table' name='[__tableau_internal_object_id__].[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/oscar/OneDrive/Documentos/Mi Repositorio de Tableau/Fuentes de datos/Crimes_-_2001_to_Present_20231030 copy 1 copy 1.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/31/2023 03:29:02 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Crimes_-_2001_to_Present_20231030' increment-value='%null%' refresh-type='create' rows-inserted='7923332' timestamp-start='2023-10-31 03:26:26.786' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7923332</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case Number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Case Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case Number</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7923332</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2800497</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Block</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Block]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Block</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>139345</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IUCR</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IUCR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IUCR</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>602</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Primary Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Primary Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Primary Type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>740</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location Description</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>212</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arrest</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Arrest]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arrest</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Domestic</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Domestic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Domestic</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Beat</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Beat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Beat</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>302</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>District</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[District]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>District</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ward</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ward]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ward</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Community Area</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Community Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Community Area</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FBI Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FBI Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FBI Code</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>X Coordinate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[X Coordinate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>X Coordinate</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>247697</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Y Coordinate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Y Coordinate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Y Coordinate</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>388617</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Updated On</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Updated On]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Updated On</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10147</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>925115</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>925638</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Crimes_-_2001_to_Present_20231030.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>925713</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Crimes_-_2001_to_Present_20231030.csv' id='Crimes_-_2001_to_Present_20231030.csv_4FFFD42BAB8749669B54A170E56A59C3'>
+            <properties context=''>
+              <relation connection='textscan.1ccnndb15yrkr314pbg910n5dgnh (copia) (copia)' name='Crimes_-_2001_to_Present_20231030.csv' table='[Crimes_-_2001_to_Present_20231030#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='Case Number' ordinal='1' />
+                  <column datatype='string' name='Date' ordinal='2' />
+                  <column datatype='string' name='Block' ordinal='3' />
+                  <column datatype='string' name='IUCR' ordinal='4' />
+                  <column datatype='string' name='Primary Type' ordinal='5' />
+                  <column datatype='string' name='Description' ordinal='6' />
+                  <column datatype='string' name='Location Description' ordinal='7' />
+                  <column datatype='boolean' name='Arrest' ordinal='8' />
+                  <column datatype='boolean' name='Domestic' ordinal='9' />
+                  <column datatype='integer' name='Beat' ordinal='10' />
+                  <column datatype='integer' name='District' ordinal='11' />
+                  <column datatype='integer' name='Ward' ordinal='12' />
+                  <column datatype='integer' name='Community Area' ordinal='13' />
+                  <column datatype='string' name='FBI Code' ordinal='14' />
+                  <column datatype='integer' name='X Coordinate' ordinal='15' />
+                  <column datatype='integer' name='Y Coordinate' ordinal='16' />
+                  <column datatype='integer' name='Year' ordinal='17' />
+                  <column datatype='string' name='Updated On' ordinal='18' />
+                  <column datatype='real' name='Latitude' ordinal='19' />
+                  <column datatype='real' name='Longitude' ordinal='20' />
+                  <column datatype='string' name='Location' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Crimes_-_2001_to_Present_20231030 (copia)' name='federated.0bjyeyu0cxb0oe14kvq9z00kfa1v (copia)' />
+            <datasource caption='Crimes_-_2001_to_Present_20231030 (copia) (copia)' name='federated.0bjyeyu0cxb0oe14kvq9z00kfa1v (copia) (copia)' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bjyeyu0cxb0oe14kvq9z00kfa1v (copia)'>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0bjyeyu0cxb0oe14kvq9z00kfa1v (copia) (copia)'>
+            <column datatype='string' name='[FBI Code]' role='dimension' type='nominal' />
+            <column-instance column='[FBI Code]' derivation='Count' name='[cnt:FBI Code:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.0bjyeyu0cxb0oe14kvq9z00kfa1v (copia) (copia)].[cnt:FBI Code:qk]</rows>
+        <cols>[federated.0bjyeyu0cxb0oe14kvq9z00kfa1v (copia)].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{49D9998D-98C9-4550-A4A6-FC9AA905D32B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='106'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0bjyeyu0cxb0oe14kvq9z00kfa1v (copia) (copia)].[none:FBI Code:nk]</field>
+            <field>[federated.0bjyeyu0cxb0oe14kvq9z00kfa1v (copia)].[none:Domestic:nk]</field>
+            <field>[federated.0bjyeyu0cxb0oe14kvq9z00kfa1v (copia)].[none:Year:qk]</field>
+            <field>[federated.0bjyeyu0cxb0oe14kvq9z00kfa1v].[none:Arrest:nk]</field>
+            <field>[federated.0bjyeyu0cxb0oe14kvq9z00kfa1v].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9290CB47-30AB-4AB2-8055-5AFA7CA825AC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      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
+      Eo72/xGHxHBZMLT7AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
