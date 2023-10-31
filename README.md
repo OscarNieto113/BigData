@@ -1,1 +1,5 @@
-# BigData
+## Dataset
+El conjunto de datos utilizado en este proyecto contiene información sobre incidentes de crímenes en la ciudad de Chicago desde 2001 hasta la fecha actual, excluyendo los datos de los últimos siete días. Los datos se obtienen del sistema CLEAR (Citizen Law Enforcement Analysis and Reporting) del Departamento de Policía de Chicago. Para proteger la privacidad de las víctimas de crímenes, las direcciones se muestran solo a nivel de bloque, y no se identifican ubicaciones específicas. Es importante destacar que los datos pueden basarse en información preliminar proporcionada por las partes que informan los incidentes y pueden cambiar después de investigaciones adicionales.
+
+## Objetivo:
+El objetivo del proyecto es construir un modelo de aprendizaje automático que pueda predecir si un sospechoso involucrado en un incidente de crimen en Chicago fue arrestado o no. Para lograr esto, se utilizarán diversas características de los incidentes, como si son domésticos, la ubicación, el distrito, el año y otras, para entrenar un modelo de clasificación. La columna "Arrest" en el dataset se utilizará como la variable objetivo, donde "1" podría representar arresto y "0" no arresto. https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2
